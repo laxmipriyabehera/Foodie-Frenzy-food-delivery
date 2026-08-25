@@ -1,0 +1,72 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: #fffaf3;
+}
+
+/* =========================
+   Popular Foods
+========================= */
+
+.popular-foods {
+  padding: 80px 8%;
+  background: #fffaf3;
+}
+
+.popular-foods h2 {
+  margin: 0 0 45px;
+
+  text-align: center;
+
+  color: #542400;
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.food-container {
+  max-width: 1250px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  align-items: stretch;
+}
+
+/* Loading / Empty */
+
+.popular-foods > p {
+  text-align: center;
+
+  color: #777;
+  font-size: 17px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1050px) {
+  .food-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .popular-foods {
+    padding: 60px 5%;
+  }
+
+  .popular-foods h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+
+  .food-container {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
